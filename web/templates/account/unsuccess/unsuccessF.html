@@ -1,0 +1,47 @@
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro efetuado</title>
+    <link href="{% static 'style/login.css' %}" rel="stylesheet" />
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<style>
+      body {
+        text-align: center;
+        padding: 40px 0;
+      }
+        h1 {
+          color: #ff3333;
+          font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+          font-weight: 900;
+          font-size: 40px;
+          margin-bottom: 10px;
+        }
+        p {
+          color: #fff;
+          font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+          font-size:20px;
+          margin: 0;
+        }
+      i {
+        color: #9ABC66;
+        font-size: 100px;
+        line-height: 200px;
+        margin-left:-15px;
+      }
+    </style>
+    <body>
+    <br><br><br><br><br><br>
+        <h1>Algo deu errado!</h1>
+        <p>Verifique se digitou os dados corretamente;<br/> lembrando das pontuações exigidas em campos como CNPJ e CEP!</p>
+        <br>
+        <button type="submit" class="btn btn-dark" style="color: #ffffff; width: 150px"><a href="/cadastroF" style="text-decoration: none; color: white;"><i class="fas fa-truck" title="Fornecedor"></i> Retornar</a></button>
+        <button type="submit" class="btn btn-dark" style="color: #ffffff; width: 150px"><a href="/admin" style="text-decoration: none; color: white;"><i class="fas fa-search" title="Consulta"></i> Consulta</a></button>
+        <button type="submit" class="btn btn-dark" style="color: #ffffff; width: 150px"><a href="../" style="text-decoration: none; color: white;"><i class="fas fa-home"></i> Pagina inicial</a></button>
+    </body>
+</html>
